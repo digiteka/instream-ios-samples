@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottom_left: UIButton!
     
     public var value :((String?) -> Void)?
+    //Title
+    var clickedButton: String = "";
     
     //public var value:String?
     
@@ -33,22 +35,29 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func topLeft(){
-        
-        //Intent
-        let intent = storyboard?.instantiateViewController(identifier: "Demo") as! DemoViewController
-        intent.modalPresentationStyle = .fullScreen
-        present(intent,animated: true)
-        
-        //let myview = ViewController()
-        //value = "top_left"
-        
-        
-        
-        //Data Extras
-        //value?("top_left")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "InputVCToDisplayVC"){
+                let displayVC = segue.destination as! DemoViewController
+                displayVC.clickedButton = clickedButton
+        }
+    }
     
-        
+    @IBAction func topLeft(){
+        clickedButton = "TOP-LEFT"
+        self.performSegue(withIdentifier: "InputVCToDisplayVC", sender: self)
+        /* let intent = storyboard?.instantiateViewController(identifier: "Demo") as! DemoViewController
+        intent.modalPresentationStyle = .fullScreen
+        present(intent,animated: true) */
+    }
+    
+    @IBAction func topRight(_ sender: Any) {
+        clickedButton = "TOP-RIGHT"
+        self.performSegue(withIdentifier: "InputVCToDisplayVC", sender: self)
+    }
+    
+    @IBAction func bottomLeft(_ sender: Any) {
+        clickedButton = "BOTTOM-LEFT"
+        self.performSegue(withIdentifier: "InputVCToDisplayVC", sender: self)
     }
     
     func setNavigationBar() {
