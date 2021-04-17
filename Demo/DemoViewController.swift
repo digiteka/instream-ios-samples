@@ -10,6 +10,7 @@ import UIKit
 import Digiteka
 
 class DemoViewController: DigitekaPlayer {
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentWebView: UIView!
     @IBOutlet weak var lorem1: UITextView!
     @IBOutlet weak var lorem2: UITextView!
@@ -19,12 +20,14 @@ class DemoViewController: DigitekaPlayer {
     @IBOutlet weak var lorem6: UITextView!
     @IBOutlet weak var lorem7: UITextView!
     @IBOutlet weak var navTitle: UINavigationItem!
+    private var lastContentOffset : CGPoint = .zero
     //Title
     var clickedButton: String?
     
+    @IBOutlet weak var constraintHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        scrollView.delegate = self
         //Param à sasair par Client
         let paramURL = "https://www.20minutes.fr/arts-stars/television/2981275-20210222-marseillais-dubai-quand-ca-allait-tapais-poing-table-previent-jessica-aidi-bookeuse"
         
@@ -39,7 +42,7 @@ class DemoViewController: DigitekaPlayer {
     
         affiche_webview(_view: contentWebView,paramURL : paramURL, paramSRC : paramSRC, autoplay : autoplay, paramMDTK : paramMDTK, paramZONE : paramZONE, paramGDPRCONSENTSTRING : paramGDPRCONSENTSTRING)
         
-        viewDidAutoPlayTopAsLeft()
+       
 
         //viewDidAutoPlayBottomAsLeft()
         
@@ -60,5 +63,29 @@ class DemoViewController: DigitekaPlayer {
         let intent = storyboard?.instantiateViewController(identifier: "Home") as! ViewController
         intent.modalPresentationStyle = .fullScreen
         present(intent,animated: true)
+    }
+    
+    
+    
+}
+
+extension DemoViewController  {
+    
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        //Estimation fotsiny io valeur 80 sy 200 io fa afaka maka marge
+        
+        if scrollView.contentOffset.y >= 80 {
+                self.constraintHeight.constant = 192
+                UIView.animate(withDuration: 0.5) {
+                    self.hideDidScroll()
+                    self.view.layoutIfNeeded()
+                }
+            }else if scrollView.contentOffset.y <= 200 {
+                self.constraintHeight.constant = 0
+                UIView.animate(withDuration: 0.5) {
+                    self.viewDidAutoPlayTopAsLeft()
+                    self.view.layoutIfNeeded()
+            }
+        }
     }
 }
