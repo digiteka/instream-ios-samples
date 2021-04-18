@@ -39,8 +39,7 @@ class DemoViewController: DigitekaPlayer {
         let paramGDPRCONSENTSTRING = "BOj8iv4Oj8iwYAHABAlxCS-AAAAnF7_______9______9uz_Ov_v_f__33e87_9v_l_7_-___u_-3zd4-_1vf99yfm1-7etr3tp_87ues2_Xur__59__3z3_9phPrsk89r633A"
         
     
-    
-        affiche_webview(_view: contentWebView,paramURL : paramURL, paramSRC : paramSRC, autoplay : autoplay, paramMDTK : paramMDTK, paramZONE : paramZONE, paramGDPRCONSENTSTRING : paramGDPRCONSENTSTRING)
+        affiche_webview(_view: contentWebView,position:clickedButton,paramURL : paramURL, paramSRC : paramSRC, autoplay : autoplay, paramMDTK : paramMDTK, paramZONE : paramZONE, paramGDPRCONSENTSTRING : paramGDPRCONSENTSTRING)
         
        
 
@@ -53,7 +52,7 @@ class DemoViewController: DigitekaPlayer {
         lorem5.isEditable = false
         lorem6.isEditable = false
         lorem7.isEditable = false
-        navTitle.title = clickedButton
+        //navTitle.title = clickedButton
 
         //viewDidAutoPlayTopAsRightDidScroll()
     }
@@ -64,28 +63,41 @@ class DemoViewController: DigitekaPlayer {
         intent.modalPresentationStyle = .fullScreen
         present(intent,animated: true)
     }
-    
-    
+
     
 }
 
 extension DemoViewController  {
     
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        //Estimation fotsiny io valeur 80 sy 200 io fa afaka maka marge
-        
-        if scrollView.contentOffset.y >= 80 {
-                self.constraintHeight.constant = 192
-                UIView.animate(withDuration: 0.5) {
-                    self.hideDidScroll()
-                    self.view.layoutIfNeeded()
-                }
-            }else if scrollView.contentOffset.y <= 200 {
-                self.constraintHeight.constant = 0
-                UIView.animate(withDuration: 0.5) {
-                    self.viewDidAutoPlayTopAsLeft()
-                    self.view.layoutIfNeeded()
-            }
-        }
-    }
+    
+//    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        //Estimation fotsiny io valeur 80 sy 200 io fa afaka maka marge
+//
+//        if scrollView.contentOffset.y >= 80 {
+//                self.constraintHeight.constant = 192
+//
+//                self.hideDidScroll()
+//                self.view.layoutIfNeeded()
+//
+////                UIView.animate(withDuration: 0.5) {
+////                    self.hideDidScroll()
+////                    self.view.layoutIfNeeded()
+////                }
+//
+//        }else if scrollView.contentOffset.y <= 200 {
+//                self.constraintHeight.constant = 0
+////                UIView.animate(withDuration: 0.5) {
+////                    self.viewDidAutoPlayTopAsLeft()
+////                    //self.viewDidAutoPlayBottomAsLeft()
+////                    //self.viewDidAutoPlayTopAsRightDidScroll()
+////                    self.view.layoutIfNeeded()
+////                }
+//
+//                self.viewDidAutoPlayTopAsLeft()
+//                //self.viewDidAutoPlayBottomAsLeft()
+//                //self.viewDidAutoPlayTopAsRightDidScroll()
+//                self.view.layoutIfNeeded()
+//
+//        }
+//    }
 }

@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func topLeft(){
-        clickedButton = "TOP-LEFT"
+        clickedButton = "top_left"
         self.performSegue(withIdentifier: "InputVCToDisplayVC", sender: self)
         /* let intent = storyboard?.instantiateViewController(identifier: "Demo") as! DemoViewController
         intent.modalPresentationStyle = .fullScreen
@@ -51,12 +51,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func topRight(_ sender: Any) {
-        clickedButton = "TOP-RIGHT"
+        clickedButton = "top_right"
         self.performSegue(withIdentifier: "InputVCToDisplayVC", sender: self)
     }
     
     @IBAction func bottomLeft(_ sender: Any) {
-        clickedButton = "BOTTOM-LEFT"
+        clickedButton = "bottom_left"
         self.performSegue(withIdentifier: "InputVCToDisplayVC", sender: self)
     }
     
