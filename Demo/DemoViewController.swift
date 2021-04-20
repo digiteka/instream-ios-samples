@@ -59,9 +59,10 @@ class DemoViewController: DigitekaPlayer {
     
     @IBAction func backHome(_ sender: Any) {
         //lorem1.text = "Change"
-        let intent = storyboard?.instantiateViewController(identifier: "Home") as! ViewController
-        intent.modalPresentationStyle = .fullScreen
-        present(intent,animated: true)
+        let controller = UIStoryboard.init(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "Home") as! ViewController
+        controller.modalPresentationStyle = .fullScreen
+        present(controller,animated: true)
     }
 
     
