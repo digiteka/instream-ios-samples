@@ -9,7 +9,7 @@
 import UIKit
 import Digiteka
 
-class DemoViewController: DigitekaPlayer {
+class DemoViewController: /*UIViewController,UIScrollViewDelegate */ DigitekaPlayer{
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentWebView: UIView!
     @IBOutlet weak var lorem1: UITextView!
@@ -25,10 +25,12 @@ class DemoViewController: DigitekaPlayer {
     var clickedButton: String?
     
     @IBOutlet weak var constraintHeight: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
         //Param à sasair par Client
+        
         let paramURL = "https://www.20minutes.fr/arts-stars/television/2981275-20210222-marseillais-dubai-quand-ca-allait-tapais-poing-table-previent-jessica-aidi-bookeuse"
         
         let paramSRC = "pqvp3r"
@@ -38,13 +40,11 @@ class DemoViewController: DigitekaPlayer {
         let paramZONE = "54"
         let paramGDPRCONSENTSTRING = "BOj8iv4Oj8iwYAHABAlxCS-AAAAnF7_______9______9uz_Ov_v_f__33e87_9v_l_7_-___u_-3zd4-_1vf99yfm1-7etr3tp_87ues2_Xur__59__3z3_9phPrsk89r633A"
         
+        
+        affiche_webview(_view: contentWebView,parent : self.view,position:clickedButton,paramURL : paramURL, paramSRC : paramSRC, autoplay : autoplay, paramMDTK : paramMDTK, paramZONE : paramZONE, paramGDPRCONSENTSTRING : paramGDPRCONSENTSTRING)
+        
+        
     
-        affiche_webview(_view: contentWebView,position:clickedButton,paramURL : paramURL, paramSRC : paramSRC, autoplay : autoplay, paramMDTK : paramMDTK, paramZONE : paramZONE, paramGDPRCONSENTSTRING : paramGDPRCONSENTSTRING)
-        
-       
-
-        //viewDidAutoPlayBottomAsLeft()
-        
         lorem1.isEditable = false
         lorem2.isEditable = false
         lorem3.isEditable = false
@@ -64,41 +64,6 @@ class DemoViewController: DigitekaPlayer {
         controller.modalPresentationStyle = .fullScreen
         present(controller,animated: true)
     }
-
     
 }
 
-extension DemoViewController  {
-    
-    
-//    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        //Estimation fotsiny io valeur 80 sy 200 io fa afaka maka marge
-//
-//        if scrollView.contentOffset.y >= 80 {
-//                self.constraintHeight.constant = 192
-//
-//                self.hideDidScroll()
-//                self.view.layoutIfNeeded()
-//
-////                UIView.animate(withDuration: 0.5) {
-////                    self.hideDidScroll()
-////                    self.view.layoutIfNeeded()
-////                }
-//
-//        }else if scrollView.contentOffset.y <= 200 {
-//                self.constraintHeight.constant = 0
-////                UIView.animate(withDuration: 0.5) {
-////                    self.viewDidAutoPlayTopAsLeft()
-////                    //self.viewDidAutoPlayBottomAsLeft()
-////                    //self.viewDidAutoPlayTopAsRightDidScroll()
-////                    self.view.layoutIfNeeded()
-////                }
-//
-//                self.viewDidAutoPlayTopAsLeft()
-//                //self.viewDidAutoPlayBottomAsLeft()
-//                //self.viewDidAutoPlayTopAsRightDidScroll()
-//                self.view.layoutIfNeeded()
-//
-//        }
-//    }
-}
