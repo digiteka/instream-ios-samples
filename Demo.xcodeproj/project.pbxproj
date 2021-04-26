@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B06B0712634672F0088D518 /* Digiteka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06B06E263466E20088D518 /* Digiteka.framework */; };
+		3B06B0722634672F0088D518 /* Digiteka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06B06E263466E20088D518 /* Digiteka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B4AB20B262462FF005A6C59 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4AB20A262462FF005A6C59 /* DemoViewController.swift */; };
 		3BA331E526300CBA00405F70 /* Digiteka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA331E226300CAD00405F70 /* Digiteka.framework */; };
 		3BA331E626300CBA00405F70 /* Digiteka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA331E226300CAD00405F70 /* Digiteka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -21,16 +23,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+<<<<<<< HEAD
 		3BA331E126300CAD00405F70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3BA331DC26300CAD00405F70 /* Digiteka.xcodeproj */;
+=======
+		3B06B06D263466E20088D518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B06B068263466E20088D518 /* Digiteka.xcodeproj */;
+>>>>>>> 0c7fc43fb2dac9e6b51baed92b2839805f3c70ec
 			proxyType = 2;
 			remoteGlobalIDString = 3B3645452625CAAC00EF8332;
 			remoteInfo = Digiteka;
 		};
+<<<<<<< HEAD
 		3BA331E326300CAD00405F70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3BA331DC26300CAD00405F70 /* Digiteka.xcodeproj */;
+=======
+		3B06B06F263466E20088D518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B06B068263466E20088D518 /* Digiteka.xcodeproj */;
+>>>>>>> 0c7fc43fb2dac9e6b51baed92b2839805f3c70ec
 			proxyType = 2;
 			remoteGlobalIDString = 3B36454E2625CAAC00EF8332;
 			remoteInfo = DigitekaTests;
@@ -58,7 +72,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+<<<<<<< HEAD
 				3BA331E626300CBA00405F70 /* Digiteka.framework in Embed Frameworks */,
+=======
+				3B06B0722634672F0088D518 /* Digiteka.framework in Embed Frameworks */,
+>>>>>>> 0c7fc43fb2dac9e6b51baed92b2839805f3c70ec
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B06B068263466E20088D518 /* Digiteka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Digiteka.xcodeproj; path = ../../Digiteka/Digiteka.xcodeproj; sourceTree = "<group>"; };
 		3B4AB20A262462FF005A6C59 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		3BA331DC26300CAD00405F70 /* Digiteka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Digiteka.xcodeproj; path = ../../digiteka/Digiteka.xcodeproj; sourceTree = "<group>"; };
 		3BB0EFCE262425CF00277ED2 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +101,10 @@
 		3BB0EFEF262425D700277ED2 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB0EFF3262425D700277ED2 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		3BB0EFF5262425D800277ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		A006D68B262EE96E004C0AC3 /* Digiteka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Digiteka.framework; path = ../Digiteka/Digiteka.framework; sourceTree = "<group>"; };
+=======
+>>>>>>> 0c7fc43fb2dac9e6b51baed92b2839805f3c70ec
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +112,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				3BA331E526300CBA00405F70 /* Digiteka.framework in Frameworks */,
+=======
+				3B06B0712634672F0088D518 /* Digiteka.framework in Frameworks */,
+>>>>>>> 0c7fc43fb2dac9e6b51baed92b2839805f3c70ec
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,11 +137,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		3BA331DD26300CAD00405F70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				3BA331E226300CAD00405F70 /* Digiteka.framework */,
 				3BA331E426300CAD00405F70 /* DigitekaTests.xctest */,
+=======
+		3B06B069263466E20088D518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B06B06E263466E20088D518 /* Digiteka.framework */,
+				3B06B070263466E20088D518 /* DigitekaTests.xctest */,
+>>>>>>> 0c7fc43fb2dac9e6b51baed92b2839805f3c70ec
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +178,11 @@
 		3BB0EFD0262425CF00277ED2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				3BA331DC26300CAD00405F70 /* Digiteka.xcodeproj */,
+=======
+				3B06B068263466E20088D518 /* Digiteka.xcodeproj */,
+>>>>>>> 0c7fc43fb2dac9e6b51baed92b2839805f3c70ec
 				3BB0EFD1262425CF00277ED2 /* AppDelegate.swift */,
 				3BB0EFD3262425CF00277ED2 /* SceneDelegate.swift */,
 				3BB0EFD5262425CF00277ED2 /* ViewController.swift */,
@@ -178,7 +216,6 @@
 		A07710B726274E8100AAE3CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A006D68B262EE96E004C0AC3 /* Digiteka.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,8 +313,13 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+<<<<<<< HEAD
 					ProductGroup = 3BA331DD26300CAD00405F70 /* Products */;
 					ProjectRef = 3BA331DC26300CAD00405F70 /* Digiteka.xcodeproj */;
+=======
+					ProductGroup = 3B06B069263466E20088D518 /* Products */;
+					ProjectRef = 3B06B068263466E20088D518 /* Digiteka.xcodeproj */;
+>>>>>>> 0c7fc43fb2dac9e6b51baed92b2839805f3c70ec
 				},
 			);
 			projectRoot = "";
@@ -290,6 +332,7 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+<<<<<<< HEAD
 		3BA331E226300CAD00405F70 /* Digiteka.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -302,6 +345,20 @@
 			fileType = wrapper.cfbundle;
 			path = DigitekaTests.xctest;
 			remoteRef = 3BA331E326300CAD00405F70 /* PBXContainerItemProxy */;
+=======
+		3B06B06E263466E20088D518 /* Digiteka.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Digiteka.framework;
+			remoteRef = 3B06B06D263466E20088D518 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3B06B070263466E20088D518 /* DigitekaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DigitekaTests.xctest;
+			remoteRef = 3B06B06F263466E20088D518 /* PBXContainerItemProxy */;
+>>>>>>> 0c7fc43fb2dac9e6b51baed92b2839805f3c70ec
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
