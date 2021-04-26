@@ -24,6 +24,7 @@ class DemoViewController: /*UIViewController,UIScrollViewDelegate */ DigitekaPla
     //Title
     var clickedButton: String?
     
+
     @IBOutlet weak var constraintHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
@@ -40,7 +41,9 @@ class DemoViewController: /*UIViewController,UIScrollViewDelegate */ DigitekaPla
         let paramZONE = "54"
         let paramGDPRCONSENTSTRING = "BOj8iv4Oj8iwYAHABAlxCS-AAAAnF7_______9______9uz_Ov_v_f__33e87_9v_l_7_-___u_-3zd4-_1vf99yfm1-7etr3tp_87ues2_Xur__59__3z3_9phPrsk89r633A"
         
+        print("click = ",clickedButton)
         
+                
         affiche_webview(_view: contentWebView,position:clickedButton,paramURL : paramURL, paramSRC : paramSRC, autoplay : autoplay, paramMDTK : paramMDTK, paramZONE : paramZONE, paramGDPRCONSENTSTRING : paramGDPRCONSENTSTRING)
         
         
