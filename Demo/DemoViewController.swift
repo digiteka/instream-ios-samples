@@ -11,7 +11,7 @@ import Digiteka
 
 class DemoViewController: DigitekaPlayer {
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var contentWebView: UIView!
+    @IBOutlet weak var contentWebView: DigitekaView!
     @IBOutlet weak var lorem1: UITextView!
     @IBOutlet weak var lorem2: UITextView!
     @IBOutlet weak var lorem3: UITextView!
@@ -27,6 +27,8 @@ class DemoViewController: DigitekaPlayer {
     @IBOutlet weak var constraintHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+            
         scrollView.delegate = self
         //Param à sasair par Client
         let paramURL = "https://www.20minutes.fr/arts-stars/television/2981275-20210222-marseillais-dubai-quand-ca-allait-tapais-poing-table-previent-jessica-aidi-bookeuse"
@@ -55,6 +57,11 @@ class DemoViewController: DigitekaPlayer {
         //navTitle.title = clickedButton
 
         //viewDidAutoPlayTopAsRightDidScroll()
+        
+        contentWebView.setCf(v: view)
+        
+        //setCf(v: <#T##UIView?#>)
+    
     }
     
     @IBAction func backHome(_ sender: Any) {

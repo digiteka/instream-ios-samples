@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         btn_topleft.layer.cornerRadius = 12
         btn_topright.layer.cornerRadius = 12
         bottom_left.layer.cornerRadius = 12
+        
     
     }
     
