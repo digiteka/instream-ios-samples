@@ -47,7 +47,6 @@ class DemoViewController: /*UIViewController,UIScrollViewDelegate */ DigitekaPla
         affiche_webview(_view: contentWebView,position:clickedButton,paramURL :paramURL , paramSRC : paramSRC, autoplay : event, paramMDTK : paramMDTK, paramZONE : paramZONE, paramGDPRCONSENTSTRING : paramGDPRCONSENTSTRING,margeH: 20,margeV: 10,dimension: 50)
         
         
-    
         lorem1.isEditable = false
         lorem2.isEditable = false
         lorem3.isEditable = false
