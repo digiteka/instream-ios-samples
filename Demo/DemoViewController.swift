@@ -26,7 +26,6 @@ class DemoViewController: /*UIViewController,UIScrollViewDelegate */ DigitekaPla
     var event:String = ""
     
     
-
     @IBOutlet weak var constraintHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {

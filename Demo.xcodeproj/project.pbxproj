@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B06B0712634672F0088D518 /* Digiteka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06B06E263466E20088D518 /* Digiteka.framework */; };
-		3B06B0722634672F0088D518 /* Digiteka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06B06E263466E20088D518 /* Digiteka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B32F9BC2649241A00E2AA3B /* Digiteka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06B06E263466E20088D518 /* Digiteka.framework */; };
 		3B4AB20B262462FF005A6C59 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4AB20A262462FF005A6C59 /* DemoViewController.swift */; };
 		3BB0EFD2262425CF00277ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0EFD1262425CF00277ED2 /* AppDelegate.swift */; };
 		3BB0EFD4262425CF00277ED2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0EFD3262425CF00277ED2 /* SceneDelegate.swift */; };
@@ -51,20 +50,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		A006D6DA262EF0A2004C0AC3 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3B06B0722634672F0088D518 /* Digiteka.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		3B06B068263466E20088D518 /* Digiteka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Digiteka.xcodeproj; path = ../../Digiteka/Digiteka.xcodeproj; sourceTree = "<group>"; };
 		3B4AB20A262462FF005A6C59 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B06B0712634672F0088D518 /* Digiteka.framework in Frameworks */,
+				3B32F9BC2649241A00E2AA3B /* Digiteka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +176,6 @@
 				3BB0EFCA262425CF00277ED2 /* Sources */,
 				3BB0EFCB262425CF00277ED2 /* Frameworks */,
 				3BB0EFCC262425CF00277ED2 /* Resources */,
-				A006D6DA262EF0A2004C0AC3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
