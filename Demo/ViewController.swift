@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     public var value :((String?) -> Void)?
     //Title
     var clickedButton: String = "";
+    var event: String = "";
     
     //public var value:String?
     
@@ -32,7 +33,6 @@ class ViewController: UIViewController {
         btn_topleft.layer.cornerRadius = 12
         btn_topright.layer.cornerRadius = 12
         bottom_left.layer.cornerRadius = 12
-        
     
     }
     
@@ -40,11 +40,13 @@ class ViewController: UIViewController {
         if(segue.identifier == "InputVCToDisplayVC"){
                 let displayVC = segue.destination as! DemoViewController
                 displayVC.clickedButton = clickedButton
+                displayVC.event = event
         }
     }
     
     @IBAction func topLeft(){
         clickedButton = "top_left"
+        event = "1"
         self.performSegue(withIdentifier: "InputVCToDisplayVC", sender: self)
         /* let intent = storyboard?.instantiateViewController(identifier: "Demo") as! DemoViewController
         intent.modalPresentationStyle = .fullScreen
@@ -53,11 +55,13 @@ class ViewController: UIViewController {
     
     @IBAction func topRight(_ sender: Any) {
         clickedButton = "top_right"
+        event = "2"
         self.performSegue(withIdentifier: "InputVCToDisplayVC", sender: self)
     }
     
     @IBAction func bottomLeft(_ sender: Any) {
         clickedButton = "bottom_left"
+        event = "0"
         self.performSegue(withIdentifier: "InputVCToDisplayVC", sender: self)
     }
     
