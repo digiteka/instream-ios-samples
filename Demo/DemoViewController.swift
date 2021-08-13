@@ -9,7 +9,7 @@
 import UIKit
 import Digiteka
 
-class DemoViewController: /*UIViewController,UIScrollViewDelegate */ DigitekaPlayer{
+class DemoViewController: DigitekaPlayer{
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentWebView: UIView!
     @IBOutlet weak var lorem1: UITextView!
@@ -24,7 +24,8 @@ class DemoViewController: /*UIViewController,UIScrollViewDelegate */ DigitekaPla
     //Title
     var clickedButton: String?
     var event:String = ""
-    
+    var str : String!
+     
     
     @IBOutlet weak var constraintHeight: NSLayoutConstraint!
     
@@ -33,6 +34,9 @@ class DemoViewController: /*UIViewController,UIScrollViewDelegate */ DigitekaPla
         scrollView.delegate = self
         //Param à sasair par Client
         
+        str = UserDefaults.standard.string(forKey: "IABTCF_TCString")
+        print("CONSENTSTRING = ",str!)
+        
         let paramURL = "https://www.20minutes.fr/arts-stars/television/2981275-20210222-marseillais-dubai-quand-ca-allait-tapais-poing-table-previent-jessica-aidi-bookeuse"
         
         let paramSRC = "pqvp3r"
@@ -40,11 +44,11 @@ class DemoViewController: /*UIViewController,UIScrollViewDelegate */ DigitekaPla
         
         let paramMDTK = "01132356"
         let paramZONE = "54"
-        let paramGDPRCONSENTSTRING = "BOj8iv4Oj8iwYAHABAlxCS-AAAAnF7_______9______9uz_Ov_v_f__33e87_9v_l_7_-___u_-3zd4-_1vf99yfm1-7etr3tp_87ues2_Xur__59__3z3_9phPrsk89r633A"
+//        let paramGDPRCONSENTSTRING = "BOj8iv4Oj8iwYAHABAlxCS-AAAAnF7_______9______9uz_Ov_v_f__33e87_9v_l_7_-___u_-3zd4-_1vf99yfm1-7etr3tp_87ues2_Xur__59__3z3_9phPrsk89r633A"
         
         
-        affiche_webview(_view: contentWebView,position:clickedButton,paramURL :paramURL , paramSRC : paramSRC, autoplay : event, paramMDTK : paramMDTK, paramZONE : paramZONE, paramGDPRCONSENTSTRING : paramGDPRCONSENTSTRING,margeH: 20,margeV: 10,dimension: 50)
-        
+        affiche_webview(_view: contentWebView,position:clickedButton,paramURL :paramURL , paramSRC : paramSRC, autoplay : event, paramMDTK : paramMDTK, paramZONE : paramZONE, paramGDPRCONSENTSTRING : str/*paramGDPRCONSENTSTRING*/,margeH: 20,margeV: 10,dimension: 50)
+       
         
         lorem1.isEditable = false
         lorem2.isEditable = false
