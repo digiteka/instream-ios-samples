@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,10 @@
 		3BB0EFDE262425D700277ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB0EFDC262425D700277ED2 /* LaunchScreen.storyboard */; };
 		3BB0EFE9262425D700277ED2 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0EFE8262425D700277ED2 /* DemoTests.swift */; };
 		3BB0EFF4262425D700277ED2 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0EFF3262425D700277ED2 /* DemoUITests.swift */; };
+		3BECC289271EADBE009D1444 /* ChoiceMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BECC283271EADA7009D1444 /* ChoiceMobile.xcframework */; };
+		3BECC28A271EADBE009D1444 /* ChoiceMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BECC283271EADA7009D1444 /* ChoiceMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3BECC292271EB7A4009D1444 /* Digiteka.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BECC28E271EB79A009D1444 /* Digiteka.xcframework */; };
+		3BECC293271EB7A4009D1444 /* Digiteka.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BECC28E271EB79A009D1444 /* Digiteka.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3B7080702719A24D00EDAA2E /* Embed Frameworks */ = {
+		3B41DEFE2718319100341A6B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3BECC28A271EADBE009D1444 /* ChoiceMobile.xcframework in Embed Frameworks */,
+				3BECC293271EB7A4009D1444 /* Digiteka.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +56,6 @@
 
 /* Begin PBXFileReference section */
 		3B4AB20A262462FF005A6C59 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		3B95D5D5270DC78E00133283 /* Digiteka.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Digiteka.xcframework; path = ../digiteka/builds/Digiteka.xcframework; sourceTree = "<group>"; };
 		3BB0EFCE262425CF00277ED2 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB0EFD1262425CF00277ED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BB0EFD3262425CF00277ED2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +70,8 @@
 		3BB0EFEF262425D700277ED2 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB0EFF3262425D700277ED2 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		3BB0EFF5262425D800277ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BECC283271EADA7009D1444 /* ChoiceMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ChoiceMobile.xcframework; path = ../../../Downloads/Compressed/ChoiceMobileSDKs/ChoiceMobile.xcframework; sourceTree = "<group>"; };
+		3BECC28E271EB79A009D1444 /* Digiteka.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Digiteka.xcframework; path = ../digiteka/builds/Digiteka.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BECC289271EADBE009D1444 /* ChoiceMobile.xcframework in Frameworks */,
+				3BECC292271EB7A4009D1444 /* Digiteka.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +158,8 @@
 		A07710B726274E8100AAE3CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3B95D5D5270DC78E00133283 /* Digiteka.xcframework */,
+				3BECC28E271EB79A009D1444 /* Digiteka.xcframework */,
+				3BECC283271EADA7009D1444 /* ChoiceMobile.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,7 +174,7 @@
 				3BB0EFCA262425CF00277ED2 /* Sources */,
 				3BB0EFCB262425CF00277ED2 /* Frameworks */,
 				3BB0EFCC262425CF00277ED2 /* Resources */,
-				3B7080702719A24D00EDAA2E /* Embed Frameworks */,
+				3B41DEFE2718319100341A6B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
